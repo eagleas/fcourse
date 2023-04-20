@@ -1,0 +1,104 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+  /* border: 0.5px rgb(239, 116, 116) solid; */
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: center;
+}
+
+h1 .extra {
+  font-family: 'Yesteryear', cursive;
+  color: #D476F8;
+  font-size: 72px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  border-bottom: 1px #E0E0E0 solid;
+}
+
+.headline .logo {
+  margin: 6px 18px;
+  justify-self: start;
+}
+
+.headline .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 24px;
+}
+
+.headline .contact {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.contact a, .contact a:visited, .contact a:hover {
+  text-decoration: none;
+  color: #4788F5;
+}
+
+.contact .phone_icon {
+  display: inline-block;
+  width: 16px;
+  margin-right: 8px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.contact .phone {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.headline .right .menu_icon {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.headline2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding: 0px;
+  border-bottom: 1px #E0E0E0 solid;
+  height: 56px;
+}
+
+.headline2 .right {
+  margin: 12px 24px;
+  font-size: 14px;
+}
+
+.headline2 .right a {
+  text-decoration: none;
+  color: #111212;
+}
+
+.headline2 .cart_icon {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+
