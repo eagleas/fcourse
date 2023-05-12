@@ -1,13 +1,17 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 html, body, html * {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  /* border: 0.5px rgb(239, 116, 116) solid; */
-  margin: 0;
+  outline: 0.5px rgb(239, 116, 116) solid;
   color: #111212;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #111212;
+  text-decoration: none;
 }
 
 h1 {
@@ -20,7 +24,11 @@ h1 {
 h1 .extra {
   font-family: 'Yesteryear', cursive;
   color: #D476F8;
-  font-size: 72px;
+  font-size: 1.7em;
+}
+
+header {
+  margin-bottom: 72px;
 }
 
 .headline {
@@ -30,18 +38,20 @@ h1 .extra {
   align-items: center;
   padding: 0px;
   border-bottom: 1px #E0E0E0 solid;
+  padding: 12px 0;
 }
 
 .headline .logo {
-  margin: 6px 18px;
-  justify-self: start;
-}
-
-.headline .right {
+  margin: 0px 18px;
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin: 16px 24px;
+}
+
+.headline .other {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin: 0 24px;
 }
 
 .headline .contact {
@@ -68,32 +78,30 @@ h1 .extra {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+  color: #4788F5;
+  font-weight: 500;
 }
 
-.headline .right .menu_icon {
+.headline .right button {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
 .headline2 {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: center;
-  padding: 0px;
+  align-items: center; */
   border-bottom: 1px #E0E0E0 solid;
-  height: 56px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.headline2 .right {
-  margin: 12px 24px;
-  font-size: 14px;
-}
-
-.headline2 .right a {
-  text-decoration: none;
-  color: #111212;
+.headline2 .cart {
+  margin: 0 24px;
+  display: block;
+  text-align: right;
 }
 
 .headline2 .cart_icon {
@@ -103,12 +111,15 @@ h1 .extra {
   margin-right: 8px;
 }
 
+
 main {
-  padding: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
   border-bottom: 1px #E0E0E0 solid;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 main .home {
@@ -116,13 +127,13 @@ main .home {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  margin-top: 72px;
   margin-bottom: 64px;
 }
 
 main .home .shop {
   font-size: 12px;
   color: #828282;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -133,46 +144,65 @@ main .control {
   color: #111212;
 }
 
-main .control a {
+.sort {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.sort button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-main .control a, main .control a:visited, main .control a:hover {
-  text-decoration: none;
-}
-
-/* main item {
-  font-size: 16px;
-  line-height: 26px;
-} */
-
-section.item {
+li.item {
   margin-bottom: 16px;
 }
 
-section.item figure {
+li.item figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
 
-section.item figcaption{
-  display: flex;
+li.item figcaption {
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 4px; */
+  text-align: center;
 }
 
-main .more {
-  margin-top: 64px;
+.item_title {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+.item_price {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #828282;
+}
+
+.more {
   margin-bottom: 56px;
+  display: flex;
+  justify-content: center;
+}
+
+.more button{
+  font-weight: 500;
+  font-size: 14px;
 }
 
 footer {
-  padding: 24px 40px 66px 40px;
+  padding: 0 40px 66px 40px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -216,7 +246,12 @@ footer ul {
 footer ul li {
   font-size: 14px;
   font-weight: 500;
+  line-height: 24px;
   margin-bottom: 8px;
+}
+
+footer ul li:last-child {
+  margin-bottom: 0;
 }
 
 footer li a, footer li a:visited, footer li a:hover {
@@ -246,16 +281,17 @@ footer input, footer button {
   height: 48px;
   border-radius: 0;
   flex-shrink: 1;
-  flex-grow: 1;
 }
 footer input {
   border: 1px solid #E0E0E0;
   padding: 12px 16px;
+  width: 100%;
 }
 footer button {
   background: #4788F5;
   border: 0;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 16px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
