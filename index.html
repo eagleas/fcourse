@@ -1,82 +1,138 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <title>FLoweLowe / Home</title>
+    <title>FLowelowe/Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yesteryear&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" media="screen" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
     <header>
-      <div><a href='./'><img height='60' src='assets/logo.svg' alt='FLoweLowe Logo'></a></div>
-      <div id='contact'>
-        <a href='tel:+70509379992'><img width='36' src='assets/phone.svg' alt='Phone'> +7 050 937 99 92</a>
-        <a href="#"><img width='36' src='assets/menu.svg' alt='Menu'></a>
+      <div class="headline">
+        <div class="logo">
+          <a href="./">
+            <img src="assets/logo.svg" alt="FLoweLowe Logo"/>
+          </a>
+        </div>
+        <div class="other">
+          <div class="contact">
+            <a href="tel:+705093799922">
+              <img src="assets/phone.svg" alt="Phone" />
+              <div class="phone">+8 050 937 9992</div>
+            </a>
+          </div>
+          <button type="button">
+            <img class="menu_icon" src="assets/menu.svg" alt="Menu" />
+          </button>
+        </div>
       </div>
-      <hr>
-      <div id='cart'>
-        <a href='./cart'><img width='36' src='assets/cart.svg' alt='Cart'>Cart</a>
+      <div class="headline2">
+        <a class="cart" href="./cart.html"><img class="cart_icon" src="assets/cart.svg" alt="Cart"/>Cart</a>
       </div>
-      <hr>
     </header>
 
     <main>
-      <h3>Shop</h3>
-      <h1>Make their <span class='extra'>day extra special</span> with a handcrafted bouquet.</h1>
+      <div class="home">
+        <div class="shop">Shop</div>
+        <h1>
+          Make their <span class="extra">day extra special</span> with a
+          handcrafted bouquet.
+        </h1>
+      </div>
 
       <section>
-        <a href='./items/1'>
-          <figure>
-            <img src='assets/bucket-orange-rose-espana.png' alt='Orange Rose Espana 70 cm'>
-            <figcaption>
-              <h2>Orange Rose Espana 70 cm</h2>
-              $1024.99
-            </figcaption>
-          </figure>
-        </a>
-      </section>
+        <div class="sort">
+          <button>Sort<img src="assets/dropdown_16px.svg" alt="sorting" /></button>
+        </div>
 
-      <section>
-        <a href='./items/2'>
-          <figure>
-            <img src='assets/tulip.png' alt='Rose Tulip Espana 50 cm'>
-            <figcaption>
-              <h2>Rose Tulip Espana 50 cm</h2>
-              $1024.99
-            </figcaption>
-          </figure>
-        </a>
-      </section>
+        <ul>
+          <li class="item">
+            <a href="./items/1">
+              <figure>
+                <img src="assets/bucket-orange-rose-espana.png" alt="Orange Rose Espana 70 cm" />
+                <figcaption>
+                  <div class="item_title">Orange Rose Espana 70 cm</div>
+                  <div class="item_price">$1024.99</div>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
+          <li class="item">
+            <a href="./items/2">
+              <figure>
+                <img src="assets/tulip.png" alt="Rose Tulip Espana 50 cm" />
+                <figcaption>
+                  <div class="item_title">Rose Tulip Espana 50 cm</div>
+                  <div class="item_price">$1024.99</div>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+
+        <div class="more">
+          <button href="#">Show more</button>
+        </div>
+      </section>
     </main>
-    <hr>
 
     <footer>
-      <div><a href='./'><img height='80' src='assets/logo.svg' alt='FLoweLowe Logo'></a></div>
-      <div><img width='36' src='assets/phone.svg' alt='Phone'><a href='tel:+70509379992'>+7 050 937 99 92</a></div>
-      <p>Feel free to contact us on your queries and we will get back to you as soon as possible!</p>
-
+      <div class="logo">
+        <a href="./"
+          ><img class="logo_icon" src="assets/logo.svg" alt="FLoweLowe Logo"
+        /></a>
+      </div>
+      <div class="contact">
+        <a href="tel:+70509379992">
+          <img class="phone_icon" src="assets/phone.svg" alt="Phone" />
+          +8 050 937 99 92
+        </a>
+      </div>
+      <div class="welcome_text">
+        Feel free to contact us on your queries and we will get back to you as
+        soon as possible!
+      </div>
+      <div class="social">
+        <div><a href="https://facebook.com/flowelowe"><img class="icon" src="assets/facebook_icon.svg"/></a></div>
+        <div><a href="https://twitter.com/flowelowe"><img class="icon" src="assets/twitter_icon.svg"/></a></div>
+        <div><a href="viber://pa?chatURI=flowelowe"><img class="icon" src="assets/viber_icon.svg"/></a></div>
+      </div>
+      <h3>Categories</h3>
       <nav>
-        <h2>Categories</h2>
         <ul>
-          <li><a href='./groups/flowers'>Flowers</a></li>
-          <li><a href='./groups/gifts'>Gifts</a></li>
-          <li><a href='./groups/roses'>Roses</a></li>
-          <li><a href='./groups/ocassion'>Ocassions</a></li>
+          <li><a href="./groups/flowers">Flowers</a></li>
+          <li><a href="./groups/gifts">Gifts</a></li>
+          <li><a href="./groups/roses">Roses</a></li>
+          <li><a href="./groups/ocassion">Ocassions</a></li>
         </ul>
-        <h2>Information</h2>
+      </nav>
+      <h3>Information</h3>
+      <nav>
         <ul>
-          <li><a href='./info'>Shop</a></li>
-          <li><a href='./about'>About us</a></li>
-          <li><a href='./payments'>Payments</a></li>
-          <li><a href='./shipping'>Shipping</a></li>
-          <li><a href='./blog'>Blog</a></li>
+          <li><a href="./info">Shop</a></li>
+          <li><a href="./about">About us</a></li>
+          <li><a href="./payments">Payments</a></li>
+          <li><a href="./shipping">Shipping</a></li>
+          <li><a href="./blog">Blog</a></li>
         </ul>
       </nav>
 
-      <div id='subscription'>
-        <h2>Subscribe us!</h2>
-        <p>In an effort to worthily lead a person on his last journey, relatives, friends and colleagues present him with flowers.</p>
-        <form>
-          <input type='email' placeholder='E-mail'>
-          <button type='submit'>SUBSCRIBE</button>
+      <div class="subscription">
+        <h3>Subscribe us!</h3>
+        <p>
+          In an effort to worthily lead a person on his last journey, relatives,
+          friends and colleagues present him with flowers.
+        </p>
+        <form id="subscribe_form" action="">
+          <input type="email" placeholder="E-mail" />
+          <button type="submit">Subscribe</button>
         </form>
       </div>
     </footer>
